@@ -1,0 +1,79 @@
+.navbar{
+  display: flex;
+  background:linear-gradient(to bottom, #7e686a, #c2b9b0);
+  height: 7em;
+  margin-bottom: 2em;
+}
+
+.navlink{
+  flex:1 ;
+  text-align: center;
+}
+
+.navlink a{
+  font-size: 2em;
+  color: #c2b9b0;
+}
+
+.navlink a:hover{
+  color: #c2cad0;
+  font-size: 2.2em;
+  text-decoration: none;
+}
+
+.title{
+  text-align: center;
+  margin-top: 1em;
+  color: #7e686a;
+}
+
+.enterName{
+  text-align: center;
+  padding:1em;
+}
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: 100%;
+}
+
+.introContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.box1{
+  flex-basis: 90%;
+  margin-bottom: 1em;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2em;
+}
+
+.container > div{
+  padding: 1em;
+  background: linear-gradient(to left,#c2cad0,#c2b9b0);
+}
+
+.container > div:nth-child(odd){
+  padding: 1em;
+  background: radial-gradient(#c2cad0, #e7717d);
+}
+
+.border{
+  background-color: (#c2cad0);
+}
+
+body{
+  background:linear-gradient(to right,white,#c2cad0);
+}
+
+footer{
+  background:linear-gradient(to left,#c2b9b0,#7e685a);
+  margin-top: 3em;
+  height: 6em;
+}
