@@ -1,13 +1,12 @@
 .navbar{
   display: flex;
-  background:linear-gradient(to bottom, #7e686a, #c2b9b0);
+  background:linear-gradient(to bottom, rgba(240, 106, 115, 0.6), rgba(167, 216, 216, 0.3));
   height: 7em;
   margin-bottom: 2em;
-  opacity: 60%;
 }
 
 .navbar:hover{
-  opacity: 100%;
+  background:linear-gradient(to bottom, rgba(240, 106, 115, 0.8), rgba(167, 216, 216, 1));
 }
 
 .navlink{
@@ -17,19 +16,19 @@
 
 .navlink a{
   font-size: 2em;
-  color: #c2b9b0;
+  color: rgba(126, 104, 106, 1);
 }
 
 .navlink a:hover{
-  color: #c2cad0;
+  color: rgb(81, 147, 197);
   font-size: 2.2em;
   text-decoration: none;
 }
 
 .title{
   text-align: center;
-  margin-top: 1em;
-  color: #7e686a;
+  margin-top: 2em;
+  color: rgba(126, 104, 106, 1);
 }
 
 .enterName{
@@ -37,37 +36,36 @@
   padding:1em;
 }
 
-.main{
-  display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
-  grid-template-rows: 100%;
-}
-
 .introContainer{
   display: flex;
   justify-content: center;
+
 }
 
 .box1{
   flex-basis: 90%;
-  margin-bottom: 1em;
+  margin-bottom: 4em;
+  text-align: center;
 }
 
 .container{
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: 2em;
 }
 
-
 .container > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
-  background: linear-gradient(to left, rgba(194,202,208,0.6),rgba(194,185,176,0.6));
+  background: linear-gradient(to left, rgba(153, 195, 228,0.6),rgba(214, 166, 118, 0.6));
 }
 
 .container > div:hover{
   padding: 1em;
-  background: linear-gradient(to left, rgba(194,202,208,1),rgba(194,185,176,1));
+  background: linear-gradient(to left, rgba(153, 195, 228,0.8),rgba(214, 166, 118, 1));
 }
 .container > div:nth-child(odd){
   padding: 1em;
@@ -75,13 +73,8 @@
 }
 
 .container > div:nth-child(odd):hover{
-  padding: 1em;
+  padding: 0.5em;
   background: radial-gradient(rgba(194,202,208,1),rgba(231,113,125,1));
-}
-
-
-.border{
-  background-color: (#c2cad0);
 }
 
 body{
@@ -99,4 +92,9 @@ footer:hover{
   background:linear-gradient(to left,rgba(194,202,208,1),rgba(126,104,90,1));
   margin-top: 3em;
   height: 6em;
+}
+
+img{
+ width: 90%;
+ height: 90%;
 }
