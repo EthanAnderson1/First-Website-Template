@@ -3,6 +3,11 @@
   background:linear-gradient(to bottom, #7e686a, #c2b9b0);
   height: 7em;
   margin-bottom: 2em;
+  opacity: 60%;
+}
+
+.navbar:hover{
+  opacity: 100%;
 }
 
 .navlink{
@@ -54,26 +59,44 @@
   grid-gap: 2em;
 }
 
+
 .container > div{
   padding: 1em;
-  background: linear-gradient(to left,#c2cad0,#c2b9b0);
+  background: linear-gradient(to left, rgba(194,202,208,0.6),rgba(194,185,176,0.6));
 }
 
+.container > div:hover{
+  padding: 1em;
+  background: linear-gradient(to left, rgba(194,202,208,1),rgba(194,185,176,1));
+}
 .container > div:nth-child(odd){
   padding: 1em;
-  background: radial-gradient(#c2cad0, #e7717d);
+  background: radial-gradient(rgba(194,202,208,0.6),rgba(231,113,125,0.6));
 }
+
+.container > div:nth-child(odd):hover{
+  padding: 1em;
+  background: radial-gradient(rgba(194,202,208,1),rgba(231,113,125,1));
+}
+
 
 .border{
   background-color: (#c2cad0);
 }
 
 body{
-  background:linear-gradient(to right,white,#c2cad0);
+  background:url(background.jpeg);
+  background-attachment: fixed;
 }
 
 footer{
-  background:linear-gradient(to left,#c2b9b0,#7e685a);
+  background:linear-gradient(to left,rgba(194,202,208,0.7),rgba(126,104,90,0.7));
+  margin-top: 3em;
+  height: 6em;
+}
+
+footer:hover{
+  background:linear-gradient(to left,rgba(194,202,208,1),rgba(126,104,90,1));
   margin-top: 3em;
   height: 6em;
 }
